@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zak Dumasia's Resume</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            border-left: 5px solid #4285f4; /* Accent color */
+            margin-bottom: 65px; /* Adjust margin to accommodate the footer height */
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4285f4; /* Accent color */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 10px;
+            transition: height 0.3s ease; /* Smooth transition for height change */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zak Dumasia's Resume</h1>
+    </header>
+
+    <section>
+        <h2>Work Experience</h2>
+        <h3>IT Administrator at UDC-Studios</h3>
+        <p>October 2021 to Present</p>
+        <ul>
+            <li>•   I have implemented an Active Directory server (recently rebranded to MS Entra) within a small spaced
+                    environment, whilst designing my implementation, I made sure it was C.I.A (Confidentiality, Integrity and
+                    Accessibility) compliant, as I believe security is the top priority. The MS Entra server exists alongside a
+                    dedicated RDP server, this server exists so that clients can connect whilst away from the site. Since RDP
+                    is known to have security flaws.
+            </li>
+            <li>
+            </li>
+            <li>
+                •   I have designed various methods of protection against hackers.
+                    One way of maintaining a secure remote session is by implementing a VPN tunnel, I have configured
+                    the tunnel to whitelist the client's home IP addresses, and blacklist all others, doing this helps prevent
+                    people with different Public IP's from even beginning to gain access to the VPN host, another way I have
+                    secured the session is by applying unique passwords for each user, as it makes it harder for an intruder
+                    to gain access by brute forcing (Forcing their way in by using a defined set of common usernames and
+                    passwords), doing this means I was compliant with Confidentially Act.
+            </li>
+        </li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <h3>T-Level In Digital Infrastructure and Support Services in Computer Networking</h3>
+        <p>Newcastle College - September 2023 to Present</p>
+        <h3>GCSE</h3>
+        <ul>
+            <li>•   Combined Science: 7 and 6</li>
+            <li>•   Maths: 5</li>
+            <li>•   English Language: 4</li>
+            <li>•   Literature: 4</li>
+            <li>•   Music: 6</li>
+            <li>•   Business Studies: 6</li>
+            <li>•   Geography: 4</li>
+            <li>•   French: 3</li>
+            <li>‎ </li>
+            <li>•   Total GCSE Earned: 8</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>•   Computer Networking</li>
+            <li>•   Computer Hardware</li>
+            <li>•   Microsoft Windows</li>
+            <li>•   Active Directory (Microsoft Entra) (1 year)</li>
+            <li>•   IT Support</li>
+            <li>•   Cisco ISE</li>
+            <li>•   Cisco Routers</li>
+            <li>•   Security</li>
+            <li>•   VPN Installation And Configuration</li>
+            <li>•   Network And Hardware Firewalls</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>German - Beginner</li>
+            <li>English - Fluent</li>
+        </ul>
+    </section>
+
+    <footer id="resumeFooter">
+        <p>Contact: zakdumasia2007@hotmail.com | Phone: +44 07389 083225 | Address: Hebburn NE312ae</p>
+    </footer>
+    <script>
+        var prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            var footer = document.getElementById("resumeFooter");
+
+            if (prevScrollPos > currentScrollPos) {
+                footer.style.height = "60px"; /* Expand height when scrolling up */
+            } else {
+                footer.style.height = "40px"; /* Shrink height when scrolling down */
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
+    </script>
+
+</body>
+</html>

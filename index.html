@@ -1,15 +1,11 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zak Dumasia's Resume</title>
     <style>
         body {
             font-family: Helvetica, Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #000000;
             margin: 0;
             padding: 0;
             background-image: url(images/background.png);
@@ -84,34 +80,13 @@
 
     <section>
         <h2>Work Experience</h2>
-        <h3>IT Administrator at UDC-Studios</h3>
+        <h3>IT And Network Administrator at UDC-Studios</h3>
         <p>October 2021 to Present</p>
         <ul>
-            <li>• I have implemented an Active Directory server (recently rebranded to MS Entra) within a small spaced
-                environment, whilst designing my implementation, I made sure it was C.I.A (Confidentiality, Integrity
-                and
-                Accessibility) compliant, as I believe security is the top priority.
-                
-            </li>
-            <li></li>The MS Entra server exists
-                alongside a
-                dedicated RDP server, this server exists so that clients can connect whilst away from the site. Since
-                RDP
-                is known to have security flaws.
-            </li>
-            <li>
-            </li>
-            <li>
-                • I have designed various methods of protection against hackers.
-                One way of maintaining a secure remote session is by implementing a VPN tunnel, I have configured
-                the tunnel to whitelist the client's home IP addresses, and blacklist all others, doing this helps
-                prevent
-                people with different Public IP's from even beginning to gain access to the VPN host, another way I have
-                secured the session is by applying unique passwords for each user, as it makes it harder for an intruder
-                to gain access by brute forcing (Forcing their way in by using a defined set of common usernames and
-                passwords), doing this means I was compliant with Confidentially Act.
-            </li>
-            </li>
+            
+            
+            <li contenteditable="">UDC-Studios is a non-profit organization that provides remote services for the community of 'Traiskirchen, Österreich', and select members around the world. Remote services can include storage, media, and dedicated servers for game hosting. The main games that UDC-Studios host are Satisfactory, Minecraft, etc. UDC-Studios also provides workstations for users who don't have high-end computers and need to do work quickly. The workstations are equipped with powerful graphics cards and processors to handle demanding tasks efficiently.<div><br></div><div>My job in this organisation was to ensure a secure connected between the server, to the user. The first interaction between UDC-Studios and the client will be through VPN tunnel. I configured the VPN to allow only whitelisted IP addresses into the network. The VPN is using IKEv2 AES-256, as it provides a secure key whilst still being quick. Each client will be equipped with a domain user via a local Microsoft Active Directory. Having domain users allows each client to authenticate to their own users on all devices connected to the domain. Domain users are also much easier to configure and administrate, because user data is stored on a centralised server.</div><div><br></div><div>Because this is a public service, there will still be many people who attempt to breach the servers. I have designed a PowerShell Script which gathers details about the events stored on the server, (specifically the user authentication events). The script will cache the data and send it to the local NAS to be analysed more clearly, (Windows event manager isn't the most user-friendly interface). Another script is used to send a message to the Administration team that there have been numerous failure sign-in attempts.</div></li>
+            
 
         </ul>
     </section>
@@ -130,36 +105,26 @@
             <li>• Business Studies: 6</li>
             <li>• Geography: 4</li>
             <li>• French: 3</li>
-            <li>‎ </li>
+            <li>&lrm; </li>
             <li>• Total GCSE Earned: 8</li>
         </ul>
     </section>
 
     <section>
         <h2>Skills</h2>
-        <ul>
-            <li>• Computer Networking</li>
-            <li>• Computer Hardware</li>
-            <li>• Microsoft Windows</li>
-            <li>• Active Directory (Microsoft Entra) (1 year)</li>
-            <li>• IT Support</li>
-            <li>• Cisco ISE</li>
-            <li>• Cisco Routers</li>
-            <li>• Security</li>
-            <li>• VPN Installation And Configuration</li>
-            <li>• Network And Hardware Firewalls</li>
-        </ul>
+        <ul contenteditable="">
+•  Cyber Security.<div><br><div>•   Microsoft Windows Server.</div><div><br></div><div>•  Configuring And Implementing a large scale VPN.</div><div><br></div><div>•  Implementing Active Directories.</div><div><br></div><div>•  Communication with technical peers.</div><div><br></div><div>•  Communication with non-technical peers.</div><div><br></div><div>•  Cisco: Routers, Switches, Planning, etc.</div></div><div><div><br></div></div><div><div>• Fluent English<br></div></div><div><div><br></div></div><div><div>• Beginner German<br></div></div></ul>
     </section>
 
-    <section>
-        <h2>Languages</h2>
+    <section contenteditable="">
+        <h2>References ( Newcastle College )</h2>
         <ul>
-            <li>German - Beginner</li>
-            <li>English - Fluent</li>
-        </ul>
+            <li><b>Shawn. Appleyard - </b></li><li><b>&nbsp; &nbsp; Role </b>(Programme Leader for IT and T-Levels)&nbsp;</li><li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Holly.Richardson@ncl-coll.ac.uk</li><li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0191-200-4911</li><li><br></li></ul><ul><li><b>Shawn. Appleyard</b></li><li><b>&nbsp; &nbsp;</b>&nbsp;<b>Role:&nbsp;</b>Programme Leader for IT and T-Levels</li><li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Shawn.Appleyard@ncl-coll.ac.uk</li><li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0793-640-8391</li><li><br></li>
+            
+        </ul><div><b>&nbsp; &nbsp; Lindsey. Cawthorne</b></div><div><b><br></b></div><div><b>&nbsp; &nbsp; &nbsp; &nbsp;Role: </b>Advanced Technical Lecturer</div><div>&nbsp; &nbsp; &nbsp; &nbsp;<b>Email: </b>Lindsey.Cawthorne@ncl-coll.ac.uk</div><div>&nbsp; &nbsp; &nbsp; &nbsp;<b>Phone: </b>(+44) 0191-625-7330</div>
     </section>
 
-    <footer id="resumeFooter">
+    <footer id="resumeFooter" style="height: 40px;">
         <p>Contact: zakdumasia2007@hotmail.com | Phone: +44 07389 083225 | Location: South Tyneside</p>
     </footer>
     <script>
@@ -179,6 +144,21 @@
         };
     </script>
 
-</body>
 
-</html>
+
+
+<div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div></body></html>

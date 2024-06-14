@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zak Dumasia's Resume</title>
@@ -14,6 +16,22 @@
             display: block;
             color: #bfbfbf;
             /* Text color */
+        }
+
+        .education-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .education-item {
+            flex: 1;
+            min-width: 300px;
+            background-color: #1b1b1b;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+            border-radius: 5px;
         }
 
         header {
@@ -77,27 +95,59 @@
     <header>
         <h1>Zak Dumasia's Resume</h1>
     </header>
+    <section>
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>T-Level In Digital Infrastructure and Support Services</h3>
+                <h4>Newcastle College - September 2023 to Present</h4>
+                <h4>Key Subjects:</h4>
+                <ul>
+                    <li>• Digital Security</li>
+                    <li>• Digital Analysis</li>
+                    <li>• Business Environments</li>
+                    <li>• Business Environments</li>
+                    <li>• Business Environments</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <h3>General Certificate of Secondary Education</h3>
+                <h4>Hebburn Comprehensive - September 2018 to 2023</h4>
+                <h4>Achieved Grades:</h4>
+                <ul>
+                    <li>• Combined Science: 7 and 6</li>
+                    <li>• Maths: 5</li>
+                    <li>• English Language: 4</li>
+                    <li>• Literature: 4</li>
+                    <li>• Music: 6</li>
+                    <li>• Business Studies: 6</li>
+                    <li>• Geography: 4</li>
+                    <li>• French: 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
+    </section>
     <section>
         <h2>Work Experience</h2>
         <h3>IT And Network Administrator at UDC-Studios</h3>
         <p>October 2021 to Present</p>
         <ul>
-            
-            
-            <li>UDC-Studios is a non-profit organization that provides remote services for the community of 'Traiskirchen, Österreich', and select members around the world. The remote services include storage, media, and dedicated servers for game hosting. The main games that UDC-Studios host are Satisfactory, Minecraft, Skyrim etc. UDC-Studios also provides digital workstations for users who don't have high-end computers and need to do work quickly. The workstations are equipped with powerful graphics cards and processors to handle demanding tasks efficiently.<div><br></div><div>My job in this organisation was to ensure a secure connected between the server, to the user. The first interaction between UDC-Studios and the client will be through VPN tunnel. I configured the VPN to allow only whitelisted IP addresses into the network. The VPN is using IKEv2 AES-256, as it provides a secure key whilst still being quick. Each client will be equipped with a domain user via a local, dedicated Microsoft Active Directory. Having domain users allows each client to authenticate to their own users on all our workstations connected to the domain. Domain users are also much easier to configure and administrate, as user data is stored on a centralised server.</div><div><br></div><div>Since this is a public service, there will still be many people who attempt to breach our servers. I have designed a program which gathers all details about the events stored on the server, (specifically the user authentication events). The script will cache the data and back it up to the local NAS to be analysed more clearly, (Windows event manager isn't the most user-friendly interface). Another script is used to send a message to the Administration team that there have been numerous failure sign-in attempts.</div></li>
-            
-
+            <div>My job in this organisation was to ensure a secure connected between the server, to the user. The
+                first interaction between UDC-Studios and the client will be through VPN tunnel. I configured the
+                VPN to allow only whitelisted IP addresses into the network. The VPN is using IKEv2 AES-256, as it
+                provides a secure key whilst still being reasonable quick. Each client will be equipped with a domain user via
+                a local Microsoft Active Directory. Having domain users allows each client to authenticate to their
+                own users on all devices connected to the domain. Domain users are also much easier to configure and
+                administrate, because user data is stored on a centralised server.</div>
         </ul>
     </section>
 
     <section>
-        <h2>Education</h2>
-        <h3>T-Level In Digital Infrastructure and Support Services in Computer Networking</h3>
-        <p>Newcastle College - September 2023 to Present</p>
-        <h3>GCSE</h3>
+        <h2>Skills</h2>
         <ul>
-            <li>• Combined Science: 7 and 6</li>
+            <li>Microsoft Windows Server.</li>
             <li>• Maths: 5</li>
             <li>• English Language: 4</li>
             <li>• Literature: 4</li>
@@ -105,23 +155,32 @@
             <li>• Business Studies: 6</li>
             <li>• Geography: 4</li>
             <li>• French: 3</li>
-            <li>&lrm; </li>
             <li>• Total GCSE Earned: 8</li>
         </ul>
     </section>
 
     <section>
-        <h2>Skills</h2>
-        <ul>
-•  Cyber Security.<div><br><div>•   Microsoft Windows Server.</div><div><br></div><div>•  Configuring And Implementing a large scale VPN.</div><div><br></div><div>•  Implementing Active Directories.</div><div><br></div><div>•  Communication with technical peers.</div><div><br></div><div>•  Communication with non-technical peers.</div><div><br></div><div>•  Cisco: Routers, Switches, Planning, etc.</div></div><div><div><br></div></div><div><div>• Fluent English<br></div></div><div><div><br></div></div><div><div>• Beginner German<br></div></div></ul>
-    </section>
-
-    <section>
         <h2>References ( Newcastle College )</h2>
         <ul>
-            <li><b>Holly RIchardson</b></li><li><b>&nbsp; &nbsp; Role </b>(Programme Leader for IT and T-Levels)&nbsp;</li><li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Holly.Richardson@ncl-coll.ac.uk</li><li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0191-200-4911</li><li><br></li></ul><ul><li><b>Shawn. Appleyard</b></li><li><b>&nbsp; &nbsp;</b>&nbsp;<b>Role:&nbsp;</b>Programme Leader for IT and T-Levels</li><li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Shawn.Appleyard@ncl-coll.ac.uk</li><li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0793-640-8391</li><li><br></li>
-            
-        </ul><div><b>Lindsey. Cawthorne</b></div><div><b><br></b></div><div><b>&nbsp; &nbsp; Role: </b>Advanced Technical Lecturer</div><div>&nbsp; &nbsp;&nbsp;<b>Email: </b>Lindsey.Cawthorne@ncl-coll.ac.uk</div><div>&nbsp; &nbsp; <b>Phone: </b>(+44) 0191-625-7330</div>
+            <li><b>Shawn. Appleyard - </b></li>
+            <li><b>&nbsp; &nbsp; Role </b>(Programme Leader for IT and T-Levels)&nbsp;</li>
+            <li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Holly.Richardson@ncl-coll.ac.uk</li>
+            <li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0191-200-4911</li>
+            <li><br></li>
+        </ul>
+        <ul>
+            <li><b>Shawn. Appleyard</b></li>
+            <li><b>&nbsp; &nbsp;</b>&nbsp;<b>Role:&nbsp;</b>Programme Leader for IT and T-Levels</li>
+            <li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Shawn.Appleyard@ncl-coll.ac.uk</li>
+            <li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0793-640-8391</li>
+            <li><br></li>
+
+        </ul>
+        <div><b>&nbsp; &nbsp; Lindsey. Cawthorne</b></div>
+        <div><b><br></b></div>
+        <div><b>&nbsp; &nbsp; &nbsp; &nbsp;Role: </b>Advanced Technical Lecturer</div>
+        <div>&nbsp; &nbsp; &nbsp; &nbsp;<b>Email: </b>Lindsey.Cawthorne@ncl-coll.ac.uk</div>
+        <div>&nbsp; &nbsp; &nbsp; &nbsp;<b>Phone: </b>(+44) 0191-625-7330</div>
     </section>
 
     <footer id="resumeFooter" style="height: 40px;">
@@ -147,33 +206,21 @@
 
 
 
-<div id="volume-booster-visusalizer">
-                    <div class="sound">
-                        <div class="sound-icon"></div>
-                        <div class="sound-wave sound-wave_one"></div>
-                        <div class="sound-wave sound-wave_two"></div>
-                        <div class="sound-wave sound-wave_three"></div>
-                    </div>
-                    <div class="segments-box">
-                        <div data-range="1-20" class="segment"><span></span></div>
-                        <div data-range="21-40" class="segment"><span></span></div>
-                        <div data-range="41-60" class="segment"><span></span></div>
-                        <div data-range="61-80" class="segment"><span></span></div>
-                        <div data-range="81-100" class="segment"><span></span></div>
-                    </div>
-                </div>
-<div id="volume-booster-visusalizer">
-                    <div class="sound">
-                        <div class="sound-icon"></div>
-                        <div class="sound-wave sound-wave_one"></div>
-                        <div class="sound-wave sound-wave_two"></div>
-                        <div class="sound-wave sound-wave_three"></div>
-                    </div>
-                    <div class="segments-box">
-                        <div data-range="1-20" class="segment"><span></span></div>
-                        <div data-range="21-40" class="segment"><span></span></div>
-                        <div data-range="41-60" class="segment"><span></span></div>
-                        <div data-range="61-80" class="segment"><span></span></div>
-                        <div data-range="81-100" class="segment"><span></span></div>
-                    </div>
-                </div></body></html>
+    <div id="volume-booster-visusalizer">
+        <div class="sound">
+            <div class="sound-icon"></div>
+            <div class="sound-wave sound-wave_one"></div>
+            <div class="sound-wave sound-wave_two"></div>
+            <div class="sound-wave sound-wave_three"></div>
+        </div>
+        <div class="segments-box">
+            <div data-range="1-20" class="segment"><span></span></div>
+            <div data-range="21-40" class="segment"><span></span></div>
+            <div data-range="41-60" class="segment"><span></span></div>
+            <div data-range="61-80" class="segment"><span></span></div>
+            <div data-range="81-100" class="segment"><span></span></div>
+        </div>
+    </div>
+</body>
+
+</html>

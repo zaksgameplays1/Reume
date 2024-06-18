@@ -27,11 +27,8 @@
 
         .education-item {
             flex: 1;
-            min-width: 300px;
-            background-color: #1b1b1b;
+            min-width: 350px;
             padding: 10px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
-            border-radius: 5px;
         }
 
         header {
@@ -87,6 +84,10 @@
             bottom: 20px;
             color: #c4c4c4;
         }
+
+        .margin {
+            margin-left: 3%;
+        }
     </style>
 </head>
 
@@ -94,6 +95,8 @@
 
     <header>
         <h1>Zak Dumasia's Resume</h1>
+        <h1 style="font-size: small; color: #969696;">Contact: zakdumasia2007@hotmail.com | Phone: 07389 083225 |
+            Location: South Tyneside</h1>
     </header>
     <section>
         <h2>Education</h2>
@@ -107,7 +110,7 @@
                     <li>• Digital Analysis</li>
                     <li>• Application Testing</li>
                     <li>• Business Studies</li>
-                    
+
                 </ul>
             </div>
             <div class="education-item">
@@ -137,7 +140,8 @@
             <div>My job in this organisation was to ensure a secure connected between the server, to the user. The
                 first interaction between UDC-Studios and the client will be through VPN tunnel. I configured the
                 VPN to allow only whitelisted IP addresses into the network. The VPN is using IKEv2 AES-256, as it
-                provides a secure key whilst still being reasonable quick. Each client will be equipped with a domain user via
+                provides a secure key whilst still being reasonable quick. Each client will be equipped with a domain
+                user via
                 a local Microsoft Active Directory. Having domain users allows each client to authenticate to their
                 own users on all devices connected to the domain. Domain users are also much easier to configure and
                 administrate, because user data is stored on a centralised server.</div>
@@ -159,68 +163,34 @@
         </ul>
     </section>
 
+
     <section>
-        <h2>References ( Newcastle College )</h2>
+        <h2>References (Newcastle College)</h2>
         <ul>
-            <li><b>Shawn. Appleyard - </b></li>
-            <li><b>&nbsp; &nbsp; Role </b>(Programme Leader for IT and T-Levels)&nbsp;</li>
-            <li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Holly.Richardson@ncl-coll.ac.uk</li>
-            <li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0191-200-4911</li>
-            <li><br></li>
+            <li><b>Holly Richardson</b></li>
+            <div class="margin">
+                <li> <b>Role:</b> Programme Leader for IT and T-Levels</li>
+                <li> <b>Email:</b> Holly.Richardson@ncl-coll.ac.uk</li>
+                <li> <b>Phone:</b> (+44) 0191-200-4911</li>
+            </div>
         </ul>
         <ul>
-            <li><b>Shawn. Appleyard</b></li>
-            <li><b>&nbsp; &nbsp;</b>&nbsp;<b>Role:&nbsp;</b>Programme Leader for IT and T-Levels</li>
-            <li>&nbsp; &nbsp;&nbsp;<b>Email: </b>Shawn.Appleyard@ncl-coll.ac.uk</li>
-            <li>&nbsp; &nbsp; <b>Phone: </b>(+44) 0793-640-8391</li>
-            <li><br></li>
-
+            <li><b>Shawn Appleyard</b></li>
+            <div class="margin">
+                <li> <b>Role:</b> Programme Leader for IT and T-Levels</li>
+                <li> <b>Email:</b> Shawn.Appleyard@ncl-coll.ac.uk</li>
+                <li> <b>Phone:</b> (+44) 0793-640-8391</li>
+            </div>
         </ul>
-        <div><b>&nbsp; &nbsp; Lindsey. Cawthorne</b></div>
-        <div><b><br></b></div>
-        <div><b>&nbsp; &nbsp; &nbsp; &nbsp;Role: </b>Advanced Technical Lecturer</div>
-        <div>&nbsp; &nbsp; &nbsp; &nbsp;<b>Email: </b>Lindsey.Cawthorne@ncl-coll.ac.uk</div>
-        <div>&nbsp; &nbsp; &nbsp; &nbsp;<b>Phone: </b>(+44) 0191-625-7330</div>
+        <ul>
+            <li><b>Lindsey Cawthorne</b></li>
+            <div class="margin">
+                <li><b>Role:</b> Advanced Technical Lecturer</li>
+                <li> <b>Email:</b> Lindsey.Cawthorne@ncl-coll.ac.uk</li>
+                <li> <b>Phone:</b> (+44) 0191-625-7330</li>
+            </div>
+        </ul>
     </section>
-
-    <footer id="resumeFooter" style="height: 40px;">
-        <p>Contact: zakdumasia2007@hotmail.com | Phone: +44 07389 083225 | Location: South Tyneside</p>
-    </footer>
-    <script>
-        var prevScrollPos = window.pageYOffset;
-
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            var footer = document.getElementById("resumeFooter");
-
-            if (prevScrollPos > currentScrollPos) {
-                footer.style.height = "60px"; /* Expand height when scrolling up */
-            } else {
-                footer.style.height = "40px"; /* Shrink height when scrolling down */
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
-
-
-
-
-    <div id="volume-booster-visusalizer">
-        <div class="sound">
-            <div class="sound-icon"></div>
-            <div class="sound-wave sound-wave_one"></div>
-            <div class="sound-wave sound-wave_two"></div>
-            <div class="sound-wave sound-wave_three"></div>
-        </div>
-        <div class="segments-box">
-            <div data-range="1-20" class="segment"><span></span></div>
-            <div data-range="21-40" class="segment"><span></span></div>
-            <div data-range="41-60" class="segment"><span></span></div>
-            <div data-range="61-80" class="segment"><span></span></div>
-            <div data-range="81-100" class="segment"><span></span></div>
-        </div>
-    </div>
 </body>
 
 </html>
